@@ -1,6 +1,6 @@
 # SPEC 01 — Landing de Zoom Digital
 
-> **Estado:** Aprobado
+> **Estado:** Implementado
 > **Depende de:** ninguno (primer spec del proyecto)
 > **Fecha:** 2026-09-26
 > **Objetivo:** Implementar en Next.js (App Router) + TypeScript + CSS Modules la landing de una sola página de Estudio Fotográfico Zoom Digital definida en `references/Landing Zoom.dc.html`, con fotografías gratuitas self-hosted y un único objetivo de conversión: abrir WhatsApp.
