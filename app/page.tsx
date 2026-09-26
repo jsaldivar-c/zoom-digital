@@ -1,3 +1,4 @@
+import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Reasons from "@/components/Reasons";
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <Services />
         <Reasons />
+        <Gallery />
       </main>
     </>
   );
