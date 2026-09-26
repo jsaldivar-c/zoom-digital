@@ -1,0 +1,79 @@
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(40px, 6vw, 84px) clamp(20px, 5vw, 72px) clamp(56px, 7vw, 100px);
+  scroll-margin-top: var(--header-h);
+}
+
+.rule {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-divider) 48px calc(100% - 48px),
+    transparent
+  );
+  margin-bottom: clamp(48px, 6vw, 84px);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+  gap: 48px clamp(32px, 6vw, 96px);
+  align-items: end;
+}
+
+.pitch {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: clamp(32px, 4.4vw, 56px);
+  line-height: 1.1;
+  margin: 0;
+  max-width: 16ch;
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 40ch;
+  color: var(--color-neutral-300);
+}
+
+.cta {
+  font-size: 18px;
+  padding: 16px 26px;
+  gap: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* `:hover` explícito: el `a:hover` global no debe cambiar el color de estas filas */
+.row,
+.row:hover {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.icon {
+  flex: none;
+  color: var(--color-accent);
+}
+
+.mapLink {
+  color: var(--color-accent-300);
+  font-size: 14px;
+}

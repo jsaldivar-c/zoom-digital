@@ -1,0 +1,63 @@
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(40px, 8vw, 112px) clamp(20px, 5vw, 72px) clamp(56px, 8vw, 112px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+  gap: clamp(32px, 5vw, 72px);
+  align-items: center;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.title {
+  font-size: clamp(40px, 5.6vw, 76px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0 0 0 -0.04em;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 42ch;
+  color: var(--color-neutral-300);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.cta {
+  font-size: 16px;
+  padding: 12px 20px;
+}
+
+.collage {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  aspect-ratio: 5 / 4.4;
+}
+
+.slot {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.photo {
+  object-fit: cover;
+}

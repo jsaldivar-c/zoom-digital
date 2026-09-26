@@ -1,0 +1,22 @@
+.fab {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 20;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--color-bg);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Fondo siempre opaco: los estados de `.btn-primary` en globals son translúcidos
+   y dejarían ver el contenido que pasa por detrás del botón flotante. */
+.fab:hover {
+  background: color-mix(in srgb, var(--color-accent) 12%, var(--color-bg));
+}
+
+.fab:active {
+  background: color-mix(in srgb, var(--color-accent) 22%, var(--color-bg));
+}

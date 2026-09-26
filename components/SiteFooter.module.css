@@ -1,0 +1,30 @@
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px clamp(20px, 5vw, 72px) 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--color-neutral-500);
+  background: linear-gradient(
+      to right,
+      transparent,
+      var(--color-divider) 48px calc(100% - 48px),
+      transparent
+    )
+    top / 100% 1px no-repeat;
+}
+
+.brand {
+  font-size: 16px;
+  letter-spacing: 0.14em;
+  color: var(--color-neutral-300);
+}
+
+.social {
+  display: flex;
+  gap: 8px;
+}
