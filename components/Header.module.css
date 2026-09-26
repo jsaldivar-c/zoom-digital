@@ -1,0 +1,53 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  flex-wrap: wrap;
+  row-gap: var(--space-2);
+  padding-inline: clamp(20px, 5vw, 72px);
+  background: color-mix(in srgb, var(--color-bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+}
+
+/* `.header .x` sube la especificidad para ganarle a `.nav a` de globals.css */
+.header .brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.kicker {
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-neutral-400);
+}
+
+.name {
+  font-size: 22px;
+  letter-spacing: 0.14em;
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-8);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.links {
+  display: flex;
+  gap: var(--space-6);
+  font-size: 14px;
+}
+
+.header .links a {
+  color: var(--color-neutral-300);
+  text-decoration: none;
+}
+
+.header .links a:hover {
+  color: var(--color-accent);
+}
