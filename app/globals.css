@@ -1,4 +1,4 @@
-/* Nocturne — tokens y clases base portados de references/_ds/nocturne-…/styles.css.
+/* Nocturne — tokens y clases base portados del design system del handoff de diseño.
    Único archivo donde se permiten colores hexadecimales literales. */
 
 :root {
@@ -62,6 +62,17 @@
   --shadow-sm: 0 0 0 1px #3f424d;
   --shadow-md: 0 0 0 1px #595d6c, 0 6px 18px rgba(0, 0, 0, 0.55);
   --shadow-lg: 0 0 0 1px #9397ab, 0 16px 40px rgba(0, 0, 0, 0.65);
+
+  /* Altura del header sticky (medida): la usan las secciones en `scroll-margin-top`.
+     El nav hace flex-wrap, así que crece a 2 y 3 filas en pantallas angostas. */
+  --header-h: 48px;
+}
+
+@media (max-width: 750px) {
+  :root { --header-h: 83px; }
+}
+@media (max-width: 490px) {
+  :root { --header-h: 127px; }
 }
 
 *, *::before, *::after { box-sizing: border-box; }

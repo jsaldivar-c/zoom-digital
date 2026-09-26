@@ -2,6 +2,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: clamp(56px, 7vw, 100px) clamp(20px, 5vw, 72px) clamp(40px, 6vw, 84px);
+  scroll-margin-top: var(--header-h);
 }
 
 .kicker {
