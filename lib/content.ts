@@ -51,11 +51,11 @@ export type GalleryItem = {
 
 export const gallery: GalleryItem[] = [
   { id: "g1", photo: "g1", label: "XV años", rows: 2 },
-  { id: "g2", photo: "g2", label: "XV años", rows: 1 },
-  { id: "g3", photo: "g3", label: "XV años", rows: 2 },
-  { id: "g4", photo: "g4", label: "Sesión", rows: 1 },
-  { id: "g5", photo: "g5", label: "XV años", rows: 2 },
-  { id: "g6", photo: "g6", label: "Boda", rows: 1 },
-  { id: "g7", photo: "g7", label: "XV años", rows: 2 },
+  { id: "g2", photo: "g2", label: "Boda", rows: 1 },
+  { id: "g3", photo: "g3", label: "Sesión", rows: 2 },
+  { id: "g4", photo: "g4", label: "Boda", rows: 1 },
+  { id: "g5", photo: "g5", label: "Boda", rows: 2 },
+  { id: "g6", photo: "g6", label: "Sesión", rows: 1 },
+  { id: "g7", photo: "g7", label: "Cumpleaños", rows: 2 },
   { id: "g8", photo: "g8", label: "Cumpleaños", rows: 1 },
 ];
